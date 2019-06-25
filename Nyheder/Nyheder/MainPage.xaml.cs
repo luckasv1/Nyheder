@@ -38,29 +38,6 @@ namespace Nyheder
             BindingContext = this;
 
         }
-
-        /*void News()
-        {
-            
-
-            Article ObjArticleList = new Article();
-
-            var assembly = typeof(MainPage).GetTypeInfo().Assembly;
-
-            Stream stream = assembly.GetManifestResourceStream($"{assembly.GetName().Name}.{jsonFileName}");
-
-            using (var reader = new StreamReader(stream))
-            {
-                var jsonString = reader.ReadToEnd();
-
-                //Converting JSON Array Objects into generic list    
-                ObjArticleList = JsonConvert.DeserializeObject<Article>(jsonString);
-            }
-            //Binding listview with json string
-            newsList.ItemSoruce = ObjArticleList.title;
-        }*/
     }
-
-    
 }
 
